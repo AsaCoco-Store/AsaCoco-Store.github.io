@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ4D1FHCW1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZ4D1FHCW1');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>AsaCoco Store</title>
+    <meta name="description" content="Sweep all worries away. Brighten your life up.">
+    <meta name="image" content="https://store.asacoco.moe/assets/og_logo.png">
+    <meta itemprop="name" content="AsaCoco Store">
+    <meta itemprop="description" content="Sweep all worries away. Brighten your life up.">
+    <meta itemprop="image" content="https://store.asacoco.moe/assets/og_logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AsaCoco Store">
+    <meta name="twitter:description" content="Sweep all worries away. Brighten your life up.">
+    <meta name="twitter:image:src" content="https://store.asacoco.moe/assets/og_logo.png">
+    <meta property="og:title" content="AsaCoco Store">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Sweep all worries away. Brighten your life up.">
+    <meta property="og:image" content="https://store.asacoco.moe/assets/og_logo.png">
+    <style>
+      @keyframes slideDown {
+        from {
+          top: -64px;
+          opacity: 0;
+        }
+        to {
+          top: 0px;
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          top: 64px;
+          opacity: 0;
+        }
+        to {
+          top: 0px;
+          opacity: 1;
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          transform: scale(5.0);
+          opacity: 0.5;
+        }
+        to {
+          transform: scale(1.0);
+          opacity: 1;
+        }
+      }
+      html { scroll-behavior: smooth; }
+      .navbar-fixed { height: 0; }
+      header { padding-top: 64px; }
+      .full-screen { height: 100vh; width: 100vw; }
+      .container { height: 100%; }
+      .margin-auto { margin: auto; }
+      @media screen and (max-height: 720px) {
+        #logo { width: 140px; height: 140px; }
+      }
+      @media screen and (max-height: 520px) {
+        #logo { display: none; }
+      }
+      .slide-down { animation: slideDown 0.8s forwards; position: relative; opacity: 0; }
+      .slide-up { animation: slideUp 0.8s forwards; position: relative; opacity: 0; }
+      .scale-in { animation: scaleIn 0.2s forwards; opacity: 0; }
+      .btn-large { font-size: 21px; }
+      .invis { height: 0; width: 0; }
+      section { padding: 44px; width: 100vw; }
+      .btn-flat { background-color: unset !important; color: #039be5; text-transform: unset; padding: 0;}
+      .product-img { margin-top: 26px; max-width: 100%; max-height: 50vh; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+  <nav style="box-shadow: unset; -webkit-box-shadow: unset;">
+    <div class="nav-wrapper orange darken-3" style="white-space: nowrap;">
+      <a class="brand-logo left" style="left: 1rem;" href="/">
+        <img src="assets/logo.png" alt="Logo" width="40" height="40" style="position: relative; top: 7px">
+        AsaCoco Store
+      </a>
+      <div class="right" style="height: 100%">
+        <div class="input-field">
+          <input class="orange-text text-darken-3" id="search" type="search" required data-products="[{&quot;id&quot;:&quot;plug_converter&quot;,&quot;name&quot;:&quot;Plug Converter&quot;,&quot;type&quot;:&quot;Converter-type AsaCoco&quot;,&quot;image&quot;:&quot;converter.png&quot;,&quot;price&quot;:1500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;plug-in_type_asacoco_plushie&quot;,&quot;name&quot;:&quot;Plug-in Type AsaCoco Plushie&quot;,&quot;type&quot;:&quot;Plushie-type AsaCoco&quot;,&quot;image&quot;:&quot;plushie.jpg&quot;,&quot;price&quot;:9500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacocoffee&quot;,&quot;name&quot;:&quot;AsaCocoffee&quot;,&quot;type&quot;:&quot;Waking-type AsaCoco&quot;,&quot;image&quot;:&quot;coffee.png&quot;,&quot;price&quot;:500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_insurance&quot;,&quot;name&quot;:&quot;AsaCoco Insurance&quot;,&quot;type&quot;:&quot;Entry-type AsaCoco&quot;,&quot;image&quot;:&quot;insurance.png&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:true},{&quot;id&quot;:&quot;asacoco_antenna&quot;,&quot;name&quot;:&quot;AsaCoco Antenna&quot;,&quot;type&quot;:&quot;Transmission-type AsaCoco&quot;,&quot;image&quot;:&quot;antenna.jpeg&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_mist&quot;,&quot;name&quot;:&quot;AsaCoco Mist&quot;,&quot;type&quot;:&quot;Air Filling Type AsaCoco&quot;,&quot;image&quot;:&quot;mist.png&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;cocoginol&quot;,&quot;name&quot;:&quot;Cocoginol&quot;,&quot;type&quot;:&quot;Suppository-type AsaCoco&quot;,&quot;image&quot;:&quot;cocoginol.png&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;extra_large_calorie_burner_type_kiryu_10l&quot;,&quot;name&quot;:&quot;Extra Large Calorie Burner Type Kiryu 10L&quot;,&quot;type&quot;:&quot;Calorie Burning Type AsaCoco&quot;,&quot;image&quot;:&quot;type_kiryu_10l.png&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_spray&quot;,&quot;name&quot;:&quot;AsaCoco Spray&quot;,&quot;type&quot;:&quot;Aerosol-type AsaCoco&quot;,&quot;image&quot;:&quot;spray.png&quot;,&quot;price&quot;:893,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;calorie_burner_type_kiryu&quot;,&quot;name&quot;:&quot;Calorie Burner Type Kiryu&quot;,&quot;type&quot;:&quot;Calorie Burning Type AsaCoco&quot;,&quot;image&quot;:&quot;type_kiryu.png&quot;,&quot;price&quot;:1000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;coco_furikake&quot;,&quot;name&quot;:&quot;Coco Furikake&quot;,&quot;type&quot;:&quot;Furikake-type AsaCoco&quot;,&quot;image&quot;:&quot;furikake.png&quot;,&quot;price&quot;:893,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;shabuppy_turn&quot;,&quot;name&quot;:&quot;Shabuppy Turn&quot;,&quot;type&quot;:&quot;Eating-type AsaCoco&quot;,&quot;image&quot;:&quot;shabuppy_turn.png&quot;,&quot;price&quot;:500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco-chi&quot;,&quot;name&quot;:&quot;AsaCoco-chi&quot;,&quot;type&quot;:&quot;Nurturing-type AsaCoco&quot;,&quot;image&quot;:&quot;asacoco_chi.png&quot;,&quot;price&quot;:2500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;cannacoco&quot;,&quot;name&quot;:&quot;CannaCoco&quot;,&quot;type&quot;:&quot;Planting-type AsaCoco&quot;,&quot;image&quot;:&quot;cannacoco.png&quot;,&quot;price&quot;:5000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;anti-asacoco&quot;,&quot;name&quot;:&quot;Anti-AsaCoco&quot;,&quot;type&quot;:&quot;Drinking-type Anti-AsaCoco&quot;,&quot;image&quot;:&quot;anti_asacoco.png&quot;,&quot;price&quot;:2000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_hook&quot;,&quot;name&quot;:&quot;AsaCoco Hook&quot;,&quot;type&quot;:&quot;Filling-type AsaCoco&quot;,&quot;image&quot;:&quot;hook.png&quot;,&quot;price&quot;:5000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;pacifcoco&quot;,&quot;name&quot;:&quot;PacifCoco&quot;,&quot;type&quot;:&quot;Pacifier-type AsaCoco&quot;,&quot;image&quot;:&quot;pacifcoco.png&quot;,&quot;price&quot;:5000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;superfine_waterbed&quot;,&quot;name&quot;:&quot;Superfine Waterbed&quot;,&quot;type&quot;:&quot;Bed-in Type AsaCoco&quot;,&quot;image&quot;:&quot;waterbed.png&quot;,&quot;price&quot;:3000,&quot;monthly&quot;:true},{&quot;id&quot;:&quot;coco's_boobs&quot;,&quot;name&quot;:&quot;Coco's Boobs&quot;,&quot;type&quot;:&quot;Hitting-type AsaCoco&quot;,&quot;image&quot;:&quot;boobs.png&quot;,&quot;price&quot;:5000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;strong_strong_connection_pillow_cover&quot;,&quot;name&quot;:&quot;Strong Strong Connection Pillow Cover&quot;,&quot;type&quot;:null,&quot;image&quot;:&quot;watame_pillow_cover.png&quot;,&quot;price&quot;:5500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;coco's_toilet&quot;,&quot;name&quot;:&quot;Coco's Toilet&quot;,&quot;type&quot;:&quot;Toilet-type AsaCoco&quot;,&quot;image&quot;:&quot;toilet.png&quot;,&quot;price&quot;:40000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_eye_drops&quot;,&quot;name&quot;:&quot;AsaCoco Eye Drops&quot;,&quot;type&quot;:&quot;Penetrating-type AsaCoco&quot;,&quot;image&quot;:&quot;eye_drops.png&quot;,&quot;price&quot;:3000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;asacoco_t-shirt&quot;,&quot;name&quot;:&quot;AsaCoco T-shirt&quot;,&quot;type&quot;:&quot;Wearing-type AsaCoco&quot;,&quot;image&quot;:&quot;asacoco_t_shirt.jpg&quot;,&quot;price&quot;:3800,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;kusozako_t-shirt&quot;,&quot;name&quot;:&quot;Kusozako T-shirt&quot;,&quot;type&quot;:&quot;Walking-type Kusozako&quot;,&quot;image&quot;:&quot;kusozako_t_shirt.jpg&quot;,&quot;price&quot;:2500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;coco_lotion&quot;,&quot;name&quot;:&quot;Coco Lotion&quot;,&quot;type&quot;:&quot;Lubricating-type AsaCoco&quot;,&quot;image&quot;:&quot;lotion.png&quot;,&quot;price&quot;:3500,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;plug-in_type_asacoco&quot;,&quot;name&quot;:&quot;Plug-in Type AsaCoco&quot;,&quot;type&quot;:null,&quot;image&quot;:&quot;plug.png&quot;,&quot;price&quot;:6000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;fairy_angel_pad&quot;,&quot;name&quot;:&quot;Fairy Angel Pad&quot;,&quot;type&quot;:null,&quot;image&quot;:&quot;pad.png&quot;,&quot;price&quot;:3000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;cocotine_patch&quot;,&quot;name&quot;:&quot;Cocotine Patch&quot;,&quot;type&quot;:null,&quot;image&quot;:&quot;patch.png&quot;,&quot;price&quot;:2000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;pp_tenshi's_ears&quot;,&quot;name&quot;:&quot;PP Tenshi's Ears&quot;,&quot;type&quot;:null,&quot;image&quot;:&quot;ear.png&quot;,&quot;price&quot;:11000000,&quot;monthly&quot;:false},{&quot;id&quot;:&quot;instant_asacoco_set&quot;,&quot;name&quot;:&quot;Instant AsaCoco Set&quot;,&quot;type&quot;:&quot;Drinking, Breath-in, Injection Type AsaCoco&quot;,&quot;image&quot;:&quot;set.png&quot;,&quot;price&quot;:10000,&quot;monthly&quot;:false}]" style="padding-left: 2rem; width: calc(100% - 2rem); -webkit-appearance: none;">
+          <label class="label-icon" id="search-icon" for="search" style="left: unset; right: 1rem">
+            <i class="material-icons">search</i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let input = document.getElementById('search')
+    let products = JSON.parse(input.getAttribute('data-products'))
+    M.Autocomplete.init(document.querySelectorAll('#search'), {
+      data: Object.fromEntries(products.map(product => [product.name, `assets/${product.image}`])),
+      onAutocomplete: () => {
+        window.location.href = `/#${products[input.value].id}`
+        input.value = ""
+      }
+    })
+    input.after(document.getElementById('search-icon'))
+    products = Object.fromEntries(products.map(product => [product.name, {id: product.id, image: product.image}]))
+  })
+</script>
+<style>
+  .autocomplete-content { width: 300px !important; left: unset !important; right: 0; }
+  .dropdown-content li > span { color: black; }
+  .autocomplete-content li .highlight { color: #ef6c00; }
+  .autocomplete-content li img { object-fit: contain; }
+</style>
+    <header class="full-screen orange darken-3">
+      <div class="container valign-wrapper center-align white-text">
+        <div class="margin-auto">
+          <img class="scale-in" id="logo" src="assets/logo.png" alt="Logo" width="210" height="210" style="animation-delay: 4s; opacity: 0;">
+          <h3>
+            <strong>
+              <span class="slide-down">Healthiness.</span>
+              <span class="slide-down" style="animation-delay: 1s">Happiness.</span>
+              <span class="slide-down" style="animation-delay: 2s">Heavenliness.</span>
+            </strong>
+          </h3>
+          <h4 class="slide-up" style="animation-delay: 3s">Sweep all worries away. Brighten your life up.</h4>
+          <br>
+          <a class="waves-effect waves-light btn-large black scale-in" href="#store" style="animation-delay: 4s">Explore
+            <i class="material-icons right">keyboard_arrow_right</i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div id="store" class="invis"></div>
+    <section class="white black-text" id="plug_converter">
+      <div class="container center-align">
+        <h3>
+          <strong>Plug Converter</strong>
+        </h3>
+        <h4>Converter-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/qduJr1B1LN0?t=2219" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="plug_converter.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/converter.png" alt="Plug Converter">
+      </div>
+    </section>
+    <section class="black white-text" id="plug-in_type_asacoco_plushie">
+      <div class="container center-align">
+        <h3>
+          <strong>Plug-in Type AsaCoco Plushie</strong>
+        </h3>
+        <h4>Plushie-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://hololive.booth.pm/items/2606904" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="plug-in_type_asacoco_plushie.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/plushie.jpg" alt="Plug-in Type AsaCoco Plushie">
+      </div>
+    </section>
+    <section class="white black-text" id="asacocoffee">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCocoffee</strong>
+        </h3>
+        <h4>Waking-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/bpYJ6bzkmgs?t=787" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacocoffee.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/coffee.png" alt="AsaCocoffee">
+      </div>
+    </section>
+    <section class="black white-text" id="asacoco_insurance">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Insurance</strong>
+        </h3>
+        <h4>Entry-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/OCGCgUmpd8k?t=957" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_insurance.html" style="padding-left: 20px;">Join
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/insurance.png" alt="AsaCoco Insurance">
+      </div>
+    </section>
+    <section class="white black-text" id="asacoco_antenna">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Antenna</strong>
+        </h3>
+        <h4>Transmission-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/RPEntBOmgi4?t=685" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_antenna.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/antenna.jpeg" alt="AsaCoco Antenna">
+      </div>
+    </section>
+    <section class="black white-text" id="asacoco_mist">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Mist</strong>
+        </h3>
+        <h4>Air Filling Type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/kHsCSYBBSFc?t=810" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_mist.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/mist.png" alt="AsaCoco Mist">
+      </div>
+    </section>
+    <section class="white black-text" id="cocoginol">
+      <div class="container center-align">
+        <h3>
+          <strong>Cocoginol</strong>
+        </h3>
+        <h4>Suppository-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/w66x87VSQRc?t=615" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="cocoginol.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/cocoginol.png" alt="Cocoginol">
+      </div>
+    </section>
+    <section class="black white-text" id="extra_large_calorie_burner_type_kiryu_10l">
+      <div class="container center-align">
+        <h3>
+          <strong>Extra Large Calorie Burner Type Kiryu 10L</strong>
+        </h3>
+        <h4>Calorie Burning Type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/VcxeO4YfMXU?t=815" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="extra_large_calorie_burner_type_kiryu_10l.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/type_kiryu_10l.png" alt="Extra Large Calorie Burner Type Kiryu 10L">
+      </div>
+    </section>
+    <section class="white black-text" id="asacoco_spray">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Spray</strong>
+        </h3>
+        <h4>Aerosol-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/ta6L-CarI3Q?t=934" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_spray.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/spray.png" alt="AsaCoco Spray">
+      </div>
+    </section>
+    <section class="black white-text" id="calorie_burner_type_kiryu">
+      <div class="container center-align">
+        <h3>
+          <strong>Calorie Burner Type Kiryu</strong>
+        </h3>
+        <h4>Calorie Burning Type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/hq_WQmrZLKs?t=783" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="calorie_burner_type_kiryu.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/type_kiryu.png" alt="Calorie Burner Type Kiryu">
+      </div>
+    </section>
+    <section class="white black-text" id="coco_furikake">
+      <div class="container center-align">
+        <h3>
+          <strong>Coco Furikake</strong>
+        </h3>
+        <h4>Furikake-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/n2yIIhJl3mo?t=863" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="coco_furikake.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/furikake.png" alt="Coco Furikake">
+      </div>
+    </section>
+    <section class="black white-text" id="shabuppy_turn">
+      <div class="container center-align">
+        <h3>
+          <strong>Shabuppy Turn</strong>
+        </h3>
+        <h4>Eating-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/n4-jb4qc_zA?t=803" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="shabuppy_turn.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/shabuppy_turn.png" alt="Shabuppy Turn">
+      </div>
+    </section>
+    <section class="white black-text" id="asacoco-chi">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco-chi</strong>
+        </h3>
+        <h4>Nurturing-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/1YufyCSVvmg?t=925" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco-chi.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/asacoco_chi.png" alt="AsaCoco-chi">
+      </div>
+    </section>
+    <section class="black white-text" id="cannacoco">
+      <div class="container center-align">
+        <h3>
+          <strong>CannaCoco</strong>
+        </h3>
+        <h4>Planting-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/yqJxK9dDNy0?t=696" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="cannacoco.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/cannacoco.png" alt="CannaCoco">
+      </div>
+    </section>
+    <section class="white black-text" id="anti-asacoco">
+      <div class="container center-align">
+        <h3>
+          <strong>Anti-AsaCoco</strong>
+        </h3>
+        <h4>Drinking-type Anti-AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/siU1f4LB2yU?t=783" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="anti-asacoco.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/anti_asacoco.png" alt="Anti-AsaCoco">
+      </div>
+    </section>
+    <section class="black white-text" id="asacoco_hook">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Hook</strong>
+        </h3>
+        <h4>Filling-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/JdxYDIpvF14?t=958" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_hook.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/hook.png" alt="AsaCoco Hook">
+      </div>
+    </section>
+    <section class="white black-text" id="pacifcoco">
+      <div class="container center-align">
+        <h3>
+          <strong>PacifCoco</strong>
+        </h3>
+        <h4>Pacifier-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/J0f4u4LElKs?t=641" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="pacifcoco.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/pacifcoco.png" alt="PacifCoco">
+      </div>
+    </section>
+    <section class="black white-text" id="superfine_waterbed">
+      <div class="container center-align">
+        <h3>
+          <strong>Superfine Waterbed</strong>
+        </h3>
+        <h4>Bed-in Type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/A95H2M4MbGo?t=727" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="superfine_waterbed.html" style="padding-left: 20px;">Join
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/waterbed.png" alt="Superfine Waterbed">
+      </div>
+    </section>
+    <section class="white black-text" id="coco's_boobs">
+      <div class="container center-align">
+        <h3>
+          <strong>Coco&#39;s Boobs</strong>
+        </h3>
+        <h4>Hitting-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/RkXd__Sd0OM?t=806" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="coco's_boobs.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/boobs.png" alt="Coco's Boobs">
+      </div>
+    </section>
+    <section class="black white-text" id="strong_strong_connection_pillow_cover">
+      <div class="container center-align">
+        <h3>
+          <strong>Strong Strong Connection Pillow Cover</strong>
+        </h3>
+        <a class="btn-large btn-flat" href="https://hololive.booth.pm/items/1816380" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="strong_strong_connection_pillow_cover.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/watame_pillow_cover.png" alt="Strong Strong Connection Pillow Cover">
+      </div>
+    </section>
+    <section class="white black-text" id="coco's_toilet">
+      <div class="container center-align">
+        <h3>
+          <strong>Coco&#39;s Toilet</strong>
+        </h3>
+        <h4>Toilet-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/vyG3OXVp888?t=870" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="coco's_toilet.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/toilet.png" alt="Coco's Toilet">
+      </div>
+    </section>
+    <section class="black white-text" id="asacoco_eye_drops">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco Eye Drops</strong>
+        </h3>
+        <h4>Penetrating-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/ZUOQvvba_Uo?t=404" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_eye_drops.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/eye_drops.png" alt="AsaCoco Eye Drops">
+      </div>
+    </section>
+    <section class="white black-text" id="asacoco_t-shirt">
+      <div class="container center-align">
+        <h3>
+          <strong>AsaCoco T-shirt</strong>
+        </h3>
+        <h4>Wearing-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://hololive.booth.pm/items/2186749" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="asacoco_t-shirt.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/asacoco_t_shirt.jpg" alt="AsaCoco T-shirt">
+      </div>
+    </section>
+    <section class="black white-text" id="kusozako_t-shirt">
+      <div class="container center-align">
+        <h3>
+          <strong>Kusozako T-shirt</strong>
+        </h3>
+        <h4>Walking-type Kusozako</h4>
+        <a class="btn-large btn-flat" href="https://hololive.booth.pm/items/1796466" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="kusozako_t-shirt.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/kusozako_t_shirt.jpg" alt="Kusozako T-shirt">
+      </div>
+    </section>
+    <section class="white black-text" id="coco_lotion">
+      <div class="container center-align">
+        <h3>
+          <strong>Coco Lotion</strong>
+        </h3>
+        <h4>Lubricating-type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/bHX-HtWZ_OA?t=708" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="coco_lotion.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/lotion.png" alt="Coco Lotion">
+      </div>
+    </section>
+    <section class="black white-text" id="plug-in_type_asacoco">
+      <div class="container center-align">
+        <h3>
+          <strong>Plug-in Type AsaCoco</strong>
+        </h3>
+        <a class="btn-large btn-flat" href="https://youtu.be/ptsD3SUacww?t=686" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="plug-in_type_asacoco.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/plug.png" alt="Plug-in Type AsaCoco">
+      </div>
+    </section>
+    <section class="white black-text" id="fairy_angel_pad">
+      <div class="container center-align">
+        <h3>
+          <strong>Fairy Angel Pad</strong>
+        </h3>
+        <a class="btn-large btn-flat" href="https://youtu.be/RLIO0XT6vQI?t=714" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="fairy_angel_pad.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/pad.png" alt="Fairy Angel Pad">
+      </div>
+    </section>
+    <section class="black white-text" id="cocotine_patch">
+      <div class="container center-align">
+        <h3>
+          <strong>Cocotine Patch</strong>
+        </h3>
+        <a class="btn-large btn-flat" href="https://youtu.be/Za53d148Qe4?t=649" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="cocotine_patch.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/patch.png" alt="Cocotine Patch">
+      </div>
+    </section>
+    <section class="white black-text" id="pp_tenshi's_ears">
+      <div class="container center-align">
+        <h3>
+          <strong>PP Tenshi&#39;s Ears</strong>
+        </h3>
+        <a class="btn-large btn-flat" href="https://youtu.be/kpDocyEObpc?t=703" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="pp_tenshi's_ears.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/ear.png" alt="PP Tenshi's Ears">
+      </div>
+    </section>
+    <section class="black white-text" id="instant_asacoco_set">
+      <div class="container center-align">
+        <h3>
+          <strong>Instant AsaCoco Set</strong>
+        </h3>
+        <h4>Drinking, Breath-in, Injection Type AsaCoco</h4>
+        <a class="btn-large btn-flat" href="https://youtu.be/rSCDDD4l8po?t=619" target="_blank">Learn more
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <a class="btn-large btn-flat" href="instant_asacoco_set.html" style="padding-left: 20px;">Buy
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+        <br>
+        <img class="product-img" src="assets/set.png" alt="Instant AsaCoco Set">
+      </div>
+    </section>
+    <footer class="page-footer white-text orange darken-2">
+  <div class="container">
+    <div class="row">
+      <div class="col m6 s12">
+        <h5>Products</h5>
+        <ul>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#plug_converter">Plug Converter</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#plug-in_type_asacoco_plushie">Plug-in Type AsaCoco Plushie</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacocoffee">AsaCocoffee</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_insurance">AsaCoco Insurance</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_antenna">AsaCoco Antenna</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_mist">AsaCoco Mist</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#cocoginol">Cocoginol</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#extra_large_calorie_burner_type_kiryu_10l">Extra Large Calorie Burner Type Kiryu 10L</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_spray">AsaCoco Spray</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#calorie_burner_type_kiryu">Calorie Burner Type Kiryu</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#coco_furikake">Coco Furikake</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#shabuppy_turn">Shabuppy Turn</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco-chi">AsaCoco-chi</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#cannacoco">CannaCoco</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#anti-asacoco">Anti-AsaCoco</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_hook">AsaCoco Hook</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#pacifcoco">PacifCoco</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#superfine_waterbed">Superfine Waterbed</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#coco's_boobs">Coco&#39;s Boobs</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#strong_strong_connection_pillow_cover">Strong Strong Connection Pillow Cover</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#coco's_toilet">Coco&#39;s Toilet</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_eye_drops">AsaCoco Eye Drops</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#asacoco_t-shirt">AsaCoco T-shirt</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#kusozako_t-shirt">Kusozako T-shirt</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#coco_lotion">Coco Lotion</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#plug-in_type_asacoco">Plug-in Type AsaCoco</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#fairy_angel_pad">Fairy Angel Pad</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#cocotine_patch">Cocotine Patch</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#pp_tenshi's_ears">PP Tenshi&#39;s Ears</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="/#instant_asacoco_set">Instant AsaCoco Set</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col m4 offset-m2 s12">
+        <h5>Kiryu Coco</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-4" href="https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w" target="_blank">YouTube</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-4" href="https://twitter.com/kiryucoco" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright © 2020 AsaCoco Store
+      <a class="grey-text text-lighten-4 right" href="https://github.com/AsaCoco-Store/AsaCoco-Store">GitHub</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
